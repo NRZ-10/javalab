@@ -22,8 +22,8 @@ public class Stringman {
         System.out.println("Character at index 0 of first string: " + s1.charAt(0));
 
         // 4. getChars()
-        char[] ch = new char[5];
-        s1.getChars(0, 5, ch, 0);
+        char[] ch = new char[s1.length()];
+        s1.getChars(0, s1.length(), ch, 0);
         System.out.print("getChars() output: ");
         System.out.println(ch);
 
@@ -40,7 +40,7 @@ public class Stringman {
         System.out.println("First string contains second? " + s1.contains(s2));
 
         // 9. indexOf()
-        System.out.println("Index of first character of second string in first: " + s1.indexOf(s2));
+        System.out.println("Index of second string in first: " + s1.indexOf(s2));
 
         // 10. toUpperCase()
         System.out.println("Uppercase: " + s1.toUpperCase());
@@ -54,7 +54,7 @@ public class Stringman {
         // Type Conversions
         System.out.print("Enter integer value as string: ");
         String intStr = sc.nextLine();
-        int  intValue = Integer.valueOf(intStr);
+        int intValue = Integer.valueOf(intStr);
         System.out.println("Integer value: " + intValue);
 
         System.out.print("Enter double value as string: ");
@@ -65,4 +65,3 @@ public class Stringman {
         sc.close();
     }
 }
-
