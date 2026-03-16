@@ -46,4 +46,3 @@ public class Addcomplex {
         result.display();
     }
 }
-
